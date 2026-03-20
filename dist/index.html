@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Alpha Dashboard</title>
+  <meta name="description" content="Free crypto alpha scanner untuk deteksi altcoin pump/dump" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'pump-green': '#00C853',
+            'dump-red': '#FF1744',
+            'signal-yellow': '#FFD600',
+            'dark-bg': '#0d1117',
+            'dark-card': '#161b22',
+            'dark-border': '#30363d',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #0d1117; color: #e6e6e6; }
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: #0d1117; }
+    ::-webkit-scrollbar-thumb { background: #30363d; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #484f58; }
+    .signal-pump { background: rgba(0, 200, 83, 0.2); color: #00C853; border: 1px solid rgba(0, 200, 83, 0.5); }
+    .signal-dump { background: rgba(255, 23, 68, 0.2); color: #FF1744; border: 1px solid rgba(255, 23, 68, 0.5); }
+    .rsi-overbought { color: #FF1744; }
+    .rsi-oversold { color: #00C853; }
+  </style>
+  <script type="module" crossorigin src="/Alpha/assets/index-Bk43rtfY.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+
+</body>
+</html>
